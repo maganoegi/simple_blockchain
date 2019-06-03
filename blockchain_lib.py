@@ -28,7 +28,7 @@ def read_user_input():
         raise Exception('Please provide the name of your block-file!')
 
 
-def find_prev(my_number, dir): # Looks in all the files until matching header signature found
+def find_prev(my_number, dir): # Looks in all the files until matching header signature found.
     target_number = my_number - 1
     entries = os.listdir(dir)
     for entry in entries:
